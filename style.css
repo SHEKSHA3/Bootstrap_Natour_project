@@ -1,0 +1,127 @@
+
+:root{
+    --primary:#7ed56f
+    --secondary:#55c57a
+    --terrtiary:#28b485
+    --light:#f5f5f5f5
+    --dark:#14141f;
+}
+
+
+
+.header{
+  background-image: radial-gradient(rgba(126, 213, 111, 0.494), rgba(85, 197, 122, 0.759)),url(img/hero.jpg);
+  background-position: center;
+
+}
+
+
+.service-item{
+    box-shadow: 0 0 45px rgba(0, 0, 0, .8);
+    transition: 0.5s;
+}   
+.service-item:hover {
+    background-color: black;
+    color: white;
+}  
+.feature-icons{
+  font-size: 4rem;
+  color: green;
+
+} 
+
+.card{
+    
+ margin: 4rem auto;
+    
+
+}
+.cards-1{
+  transition: all 1s ease;
+  backface-visibility: hidden;
+
+}
+.cards-1:hover{
+  transform:rotateY(180deg)
+
+}
+.book-now{
+    
+    background: linear-gradient(rgba(20, 20, 20, 0.7),rgba(20,20,31,0.7)), url(../img/nat-10.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.heading1{
+  animation: toleft 1s ease;
+}
+@keyframes toleft {
+  0%{
+    transform: translateX(-18rem);
+    opacity: .2;
+  }
+  50%{
+    opacity: .7;
+  }
+  75%{
+    transform: translateX(3rem);
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.heading2{
+  animation: toright 1s ease;
+}
+@keyframes toright { 
+  0%{
+    transform: translateX(18rem);
+    opacity: .2;
+  }
+  50%{
+    opacity: .7;
+  }
+  75%{
+    transform: translateX(-3rem);
+    opacity: 1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.video{
+  z-index: -1;
+  background-size:cover;
+}
+.list-group-item{
+  background-image: radial-gradient(-45deg,transparent,rgb(116, 249, 79)  );
+  background-size:300%;
+  transform-origin: center;
+  transition: all .1s ease ;
+}
+.navgation{
+  z-index: 100;
+}
+.inputtype{
+  border: none;
+}
+.btn-search{
+  border: none;
+  background-color: transparent;
+  position: inherit;
+  left: -2rem;
+}
+.cards-2{
+  transform:rotateY(180deg);
+  backface-visibility: hidden;
+  
+}
+.cards-1:hover ~ .cards-2{
+  transform: rotateY(0);
+}
+
+
+
+
