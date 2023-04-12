@@ -121,6 +121,10 @@
 .cards-1:hover ~ .cards-2{
   transform: rotateY(0);
 }
+.fade{
+  background-image: linear-gradient(to right, rgba(86, 221, 65, 0.35),rgba(34, 0, 255, 0.524));
+  z-index: 3;
+}
 
 
 
