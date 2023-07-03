@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task given by suresh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="/img/nat-1-large.jpg" style="width: 100%;" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/img/nat-2-large.jpg" style="width: 100%;" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="/img/nat-3-large.jpg" style="width: 100%;" />
+      </div>
+
+      <a class="prev" style="color: black;" onclick="plusSlides(-1)">❮</a>
+      <a class="next" style="color: black;" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+
+    <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- woking on chaging the values number of boxes based on the input  -->
+
+    <!-- <form onsubmit="return false"> -->
+    <div class="box_parent">
+      <div class="box_child1">
+        <label for="">how many box do you want</label>
+        <br />
+        <!-- <form onsubmit="return false"> -->
+          <input
+          id="noOfBoxes"
+          type="number"
+          onkeypress="CheckNumeric(event)"
+          required
+        />
+        <button type="Submit" onclick="noOfBoxes(event) ">
+          Boxes
+        </button>
+        <!-- </form> -->
+      </div>
+      <div id="parent" class="box_display">
+        <div class="box_display_child" id="mainparent"></div>
+      </div>
+    </div>
+    <!-- </form> -->
+
+    <!-- working on numbers 1.prime number -->
+    <div class="radiaocalculation">
+      <div class="radiaocalculation_child">
+        <input
+          type="radio"
+          id="prime"
+          onclick="prime()"
+          name="choose"
+          value="prime"
+          selected
+        />
+        <label for="prime">prime number</label>
+        <br />
+        <input
+          type="radio"
+          id="sort"
+          name="choose"
+          onclick="sort()"
+          value="sort"
+        />
+        <label for="">sort</label>
+        <br />
+        <input
+          type="radio"
+          id="fibbones"
+          name="choose"
+          onclick="fibonass()"
+          value="fiboness"
+        />
+        <label for="fibbones">fibonessi</label>
+        <br />
+        <input
+          type="radio"
+          id="binary"
+          name="choose"
+          onclick="binary()"
+          value="binary"
+        />
+        <label for="binary">binary</label>
+      </div>
+
+      <div class="calculation_parent">
+        <form onsubmit="return false">
+          <label for="" id="labels">enter the value</label><br />
+          <input
+            id="inside"
+            onkeypress="CheckNumeric(event)"
+            type="text"
+            required
+          />
+          <button onclick="calculation()" type="submit">Submit</button>
+          <h3 id="result"></h3>
+        </form>
+      </div>
+    </div>
+    <!-- localStorage and session storage -->
+    <div class="parent_localstorage">
+      <div class="child_localstoarage">
+        <form style="display: inline;" onsubmit="return false">
+          <label for="">Name::</label>
+          <input type="text" id="localStorage" required />
+          <br />
+          <button onclick="add()" type="submit">Adding</button>
+        </form>
+        <button onclick="view()">View</button>
+        <button id="remove">Remove</button>
+        <button id="removeall">Removell</button>
+      </div>
+      <div id="para_parent" class="localdisply">
+        <p id="display" class="display"></p>
+      </div>
+    </div>
+    <!-- how many times it need to move ... -->
+    <div id="div0" class="container2">
+      <div class="submit-box">
+        <div class="box">
+          <form action="" onsubmit="return false">
+            <label class="label" for="lname">Box movement count</label>
+            <input
+              class="enter"
+              type="text"
+              id="lname"
+              name="lname"
+              required
+              onkeypress="CheckNumeric(event)"
+            />
+            <button class="submit-btn" type="submit" value="Submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="boll-box">
+        <div class="moving-ball"></div>
+      </div>
+    </div>
+    <div class="size-changing">
+      <div class="size-changing__child1">
+        <button type="button" onclick="increse()" id="increse">Increse</button>
+        <button type="button" onclick="decrese()" id="decrese">Decress</button>
+        <button type="button" id="changecolure" onclick="changecolure()">
+          Colore-Change
+        </button>
+      </div>
+      <div class="size-changing__child2">
+        <div id="changingParameter"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

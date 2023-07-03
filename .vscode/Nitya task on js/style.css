@@ -1,0 +1,17 @@
+.parent{
+    display: flex;
+    height: 20vh;
+    outline: 2px solid red;
+    /* justify-content: center;
+    align-items: center; */
+
+}
+.child [input^=button]{
+    width: 100px;
+    background-color: green;
+    color: black;
+    margin: 20px;
+    display: flex;
+    justify-content:space-between;
+    
+}

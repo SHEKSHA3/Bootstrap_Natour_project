@@ -32,62 +32,56 @@
     <link rel="stylesheet" href="/css/icon-fonts-styles.css" />
     <title>Document</title>
   </head>
+  
 
- 
+  
   <body>
-    <div class="container position-relative ">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light my-0 py-0 posiprivary bg-transparent">
+    <div class="container-fluid" >
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark  fixed-top my-0 py-0 ">
         <div class="container">
-          <a class="navbar-brand text-success" href="#header-section">Natour</a>
-          <button class="navbar-toggler text-" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand text-success" href="#header-section">
+            <img src="img/logo-white.png" class=""style="width:2rem;height:1rem" alt=""></a>
+          <button class="navbar-toggler text border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse position-relative" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse background-nav " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0  ">
               <li class="nav-item d-flex justify-content-end ">
-                <a class="nav-link active" aria-current="page" href="#header-section">HOME</a>
+                <a class="nav-link active text-success" aria-current="page" href="#header-section">HOME</a>
               </li>
               <li class="nav-item d-flex justify-content-end">
-                <a class="nav-link active" aria-current="page" href="#feauture_section">FEAUTURE</a>
+                <a class="nav-link active text-light" aria-current="page" href="#feauture_section">FEAUTURE</a>
               </li>
               <li class="nav-item d-flex justify-content-end">
-                <a class="nav-link active" aria-current="page" href="#review">REVIEW</a>
+                <a class="nav-link active text-info" aria-current="page" href="#review">REVIEW</a>
               </li>
               <li class="nav-item d-flex justify-content-end">
-                <a class="nav-link active" aria-current="page" href="#legacy">LEGACY</a>
+                <a class="nav-link active text-primary" aria-current="page" href="#legacy">LEGACY</a>
               </li>
               <li class="nav-item d-flex justify-content-end">
-                <a class="nav-link active" aria-current="page" href="#book">BOOK</a>
+                <a class="nav-link active text-secondary" aria-current="page" href="#book">BOOK</a>
               </li>
               <li class="nav-item d-flex justify-content-end">
-                <a class="nav-link active" aria-current="page" href="#owner">ABOUT ME</a>
+                <a class="nav-link active text-success" aria-current="page" href="#owner">ABOUT ME</a>
               </li>
-              
             </ul>
-            <!-- <form class="d-flex " >
-              <input class="form-control me-2  rounded-pill" type="search" id="searching" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form> -->
           </div>
         </div>
       </nav>
-    </div>
-  <!-- headre section -->
-    <div id="header-section"class="container header">
-      <div class="container-fluid py-5 mb-5  ">
-        <img src="img/logo-white.png" class="position-absolute"style="width:2rem;height:1rem" alt="">
-        <div class="container py-5">
-          <div class="row justify-content-center py-5">
-            <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
-              <h1 class="display-3 text-white text-uppercase mb-2 heading1">outdoors</h1>
-              <p class="fs-5 text-white mb-4 text-uppercase heading2">Where Life Begins To Happen</p>
-              <div class="position-relative w-75 mx-auto mt-5">
-                <form class="" role="search">
-                  <!-- <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search"> -->
-                  <!-- <button class="btn btn-outline bg-light rounded-pill"  type="submit">DISCOVER OUR TOUR</button> -->
-                  <input  class="w-75 p-2 rounded-pill border-none inputtype position-inherit";type="text" placeholder="Search.." name="search">
-                  <button class="position-relative btn-search " type="submit "><i class="fa fa-search fa-1x text-success "></i></button>
-                </form>
+      <!-- headre section -->
+      <div id="header-section"class="container-fluid header">
+        <div class="container-fluid mb-5  ">
+          <div class="container py-5">
+            <div class="row justify-content-center py-5">
+              <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-3 text-white text-uppercase mb-2 heading1">outdoors</h1>
+                <p class="fs-5 text-white mb-4 text-uppercase heading2">Where Life Begins To Happen</p>
+                <div class="position-relative w-75 mx-auto mt-5">
+                  <form class="" role="search">
+                    <input  class="w-75 p-2 rounded-pill border-none inputtype position-inherit";type="text" placeholder="Search.." name="search">
+                    <button class="position-relative btn-search " type="submit "><i class="fa fa-search fa-1x text-success "></i></button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -130,7 +124,7 @@
               >Learn more &rarr;</a
             >
           </div>
-          <div class="col-lg-6 mb-sm-1" style="min-height: 400px;">
+          <div class="col-lg-6 mb-sm-1" style="min-height: 4rem;">
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
               <div class="carousel-indicators">
                 <button
@@ -230,7 +224,7 @@
       </div>
     </div>
     <!-- features section -->
-    <div id="feauture_section" class="container-xxl py-5">
+    <div id="feauture_section  " class="container-fluid py-5 exiting">
       <div class="container">
         <div class="text-center">
           <div class="row g-4 mt-5">
@@ -285,9 +279,9 @@
       </div>
     </div>
     <!-- we make people genuie happy -->
-    <div id="review" class="container attraction mh-100 vh-100 ">
+    <div id="review" class="container-fluid attraction mt-3">
       <div class="position-relative ">
-        <video class="position-absolute w-100 opacity-50 z-index-0  video" loop muted autoplay poster="" src="/img/video.mp4" ></video>
+        <video class="position-absolute vh-100 vw-100 opacity-50 z-index-0  video object-fit-cover" loop muted autoplay poster="" src="/img/video.mp4" ></video>
       </div>
       <div class="row d-sm-flex flex-column">
           <di class="col-md-12 col-sm-6">
@@ -302,7 +296,7 @@
             <img src="/img/nat-8.jpg" alt=""  class="rounded-circle" style="width:5rem;height: 5rem;">
             <div class="ms-2">
               <h4 class="text-uppercase text-muted mb-4">i have best week ever with my family</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit voluptate incidunt iste excepturi qui minus. Atque quas libero dolor est. Amet autem enim quis debitis ipsa, in cum commodi aspernatur consectetur officia obcaecati harum
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               </p>
             </div>
           </div>
@@ -312,7 +306,7 @@
             <img src="/img/nat-9.jpg" alt="" class="rounded-circle" style="width:5rem;height: 5rem;">
             <div class="ms-2">
               <h4 class="text-uppercase text-muted mb-4">i have best week ever with my family</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit voluptate incidunt iste excepturi qui minus. Atque quas libero dolor est. Amet autem enim quis debitis ipsa, in cum commodi aspernatur consectetur officia obcaecati harum
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit
               </p>
             </div>
           </div>
@@ -320,9 +314,9 @@
       </div>
     </div>
     <!-- section tours-->
-    <div id="legacy"class="container-xxl py-5">
+    <div id="legacy"class="container-fluid my-5 py-5">
       <div class="container">
-        <div class="text-center text-success">
+        <div class="text-center text-success mt-5">
           <h1 class="mb-5">MOST POPULAR TOURS</h1>
           <div class="row g-5 position-inherit">
           
@@ -363,7 +357,7 @@
             </div> -->
         
 
-            <div class="card col-sm-12 p-4" style="width: 20rem;">
+            <div class="card cards-1 col-sm-12 p-4" style="width: 20rem;">
               <img src="img/nat-6.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -381,7 +375,7 @@
               </ul>
             </div>
 
-            <div class="card col-sm-12 p-4" style="width: 20rem;">
+            <div class="card cards-1 col-sm-12 p-4" style="width: 20rem;">
               <img src="img/nat-7.jpg" class="card-img-top" alt="..." />
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
@@ -490,13 +484,13 @@
                   <a class="nav-link text-white" href="#">CONTACT</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">EMAIL</a>
+                  <a class="nav-link text-white" href="#">TERMS</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">FB</a>
+                  <a class="nav-link text-white" href="#">POLICY</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="#">WHATSAPP</a>
+                  <a class="nav-link text-white" href="#">MORE</a>
                 </li>
               </ul>
              </div>

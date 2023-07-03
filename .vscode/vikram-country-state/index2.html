@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Id Proof</title>
+  </head>
+  <body>
+    <form action="" id="form">
+     
+      <h1>Form for validation</h1>
+      <div>
+        <label for="country">Country:</label>
+        <select id="country" required>
+          <option value="">Select country</option>
+          <option value="0">India</option>
+          <option value="1">USA</option>
+        </select>
+        <br />
+        <label for="state">State:</label>
+        
+        <select id="state" disabled >
+          <option value="" >Select State</option>
+        </select>
+      </div>
+      <label for="selectId">Select Id </label>
+      <select name="" id="selectId"  required>
+        <option value="">select Id</option>
+        <option value="1">AdharID</option>
+        <option value="2">PanID</option> </select
+      ><br /><br />
+      <label for="ids">Enter ID Value</label>
+      <div>
+        <input type="text" id="idsValidation" required /><br />
+        <span id="message"></span>
+      </div>
+      <br />
+
+      <button type="submit">Submit</button>
+    </form>
+    <script src="script2.js"></script>
+  </body>
+</html>
